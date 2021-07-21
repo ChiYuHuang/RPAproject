@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1154,1758" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:maes="clr-namespace:Microsoft.Activities.Extensions.Statements;assembly=Microsoft.Activities.Extensions" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="725.6,1747.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:maes="clr-namespace:Microsoft.Activities.Extensions.Statements;assembly=Microsoft.Activities.Extensions" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -71,7 +71,7 @@
       <AssemblyReference>UiPath.Word</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ueab:SequenceX DisplayName="SequenceA" sap:VirtualizedContainerService.HintSize="444.666666666667,1693.33333333333" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX DisplayName="SequenceA" sap:VirtualizedContainerService.HintSize="441.6,1682.4" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="s:Int32[]" Name="array" />
       <Variable x:TypeArguments="scg:List(x:Int32)" Name="list" />
@@ -84,7 +84,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap2010:Annotation.AnnotationText="predefine, structure" DisplayName="AssignLauren" sap:VirtualizedContainerService.HintSize="402.666666666667,92" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="predefine, structure" DisplayName="Assigna" sap:VirtualizedContainerService.HintSize="400,91.2" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:Int32[]">[array]</OutArgument>
       </Assign.To>
@@ -97,7 +97,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="402.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="400,60" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(x:Int32)">[list]</OutArgument>
       </Assign.To>
@@ -105,9 +105,9 @@
         <InArgument x:TypeArguments="scg:List(x:Int32)">[New List(Of Int32)]</InArgument>
       </Assign.Value>
     </Assign>
-    <AddToCollection x:TypeArguments="x:Int32" Collection="[list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="402.666666666667,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="3" />
-    <AddToCollection x:TypeArguments="x:Int32" Collection="[list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="402.666666666667,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="20" />
-    <Assign sap:VirtualizedContainerService.HintSize="402.4,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <AddToCollection x:TypeArguments="x:Int32" Collection="[list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="3" />
+    <AddToCollection x:TypeArguments="x:Int32" Collection="[list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="20" />
+    <Assign sap:VirtualizedContainerService.HintSize="400,60" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:Dictionary(x:Int32, x:String)">[dictionary]</OutArgument>
       </Assign.To>
@@ -115,8 +115,8 @@
         <InArgument x:TypeArguments="scg:Dictionary(x:Int32, x:String)">[new Dictionary(of int32,string)]</InArgument>
       </Assign.Value>
     </Assign>
-    <maes:AddToDictionary x:TypeArguments="x:Int32, x:String" Dictionary="[dictionary]" DisplayName="Add to dictionary" sap:VirtualizedContainerService.HintSize="402.4,135.2" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_1" Key="1" Value="Lauren" />
-    <Assign sap:VirtualizedContainerService.HintSize="402.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <maes:AddToDictionary x:TypeArguments="x:Int32, x:String" Dictionary="[dictionary]" DisplayName="Add to dictionary" sap:VirtualizedContainerService.HintSize="400,135.2" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_1" Key="1" Value="Lauren" />
+    <Assign sap:VirtualizedContainerService.HintSize="400,60" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[dictionary(4)]</OutArgument>
       </Assign.To>
@@ -124,33 +124,33 @@
         <InArgument x:TypeArguments="x:String">Ken</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="402.666666666667,198" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[array]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="400,195.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[array]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
           </ActivityAction.Argument>
-          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="233.333333333333,61.3333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[item.ToString]" />
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230.4,61.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[item.ToString]" />
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="402.666666666667,198" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[list]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="400,195.2" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[list]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
           </ActivityAction.Argument>
-          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="233.333333333333,61.3333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[item.ToString]" />
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230.4,61.6" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[item.ToString]" />
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
-    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="402.666666666667,391.333333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[dictionary.Keys]">
+    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="400,388" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[dictionary.Keys]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Int32">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="304.666666666667,254.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence sap:VirtualizedContainerService.HintSize="304.8,254.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="splitvalue" />
             </Sequence.Variables>
@@ -159,7 +159,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="262.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_5">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[value]</OutArgument>
               </Assign.To>
@@ -167,7 +167,7 @@
                 <InArgument x:TypeArguments="x:String">[dictionary(item)]</InArgument>
               </Assign.Value>
             </Assign>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[value.Remove(0,1)]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="263.2,61.6" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[value.Remove(0,1)]" />
           </Sequence>
         </ActivityAction>
       </ui:ForEach.Body>
