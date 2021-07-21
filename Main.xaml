@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1154,1766" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:maes="clr-namespace:Microsoft.Activities.Extensions.Statements;assembly=Microsoft.Activities.Extensions" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="725.6,1758.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:maes="clr-namespace:Microsoft.Activities.Extensions.Statements;assembly=Microsoft.Activities.Extensions" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -69,9 +69,10 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ueab:SequenceX DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="444.666666666667,1701.33333333333" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX DisplayName="SequenceA" sap:VirtualizedContainerService.HintSize="444,1693.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="s:Int32[]" Name="array" />
       <Variable x:TypeArguments="scg:List(x:Int32)" Name="list" />
@@ -84,12 +85,12 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap2010:Annotation.AnnotationText="predefine, structure" sap:VirtualizedContainerService.HintSize="402.666666666667,92" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="predefine, structure" sap:VirtualizedContainerService.HintSize="402.4,91.2" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:Int32[]">[array]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:Int32[]">[{11,30,21,5}]</InArgument>
+        <InArgument x:TypeArguments="s:Int32[]">[{11,30,21,5,4}]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -97,7 +98,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="402.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="402.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(x:Int32)">[list]</OutArgument>
       </Assign.To>
@@ -105,9 +106,9 @@
         <InArgument x:TypeArguments="scg:List(x:Int32)">[New List(Of Int32)]</InArgument>
       </Assign.Value>
     </Assign>
-    <AddToCollection x:TypeArguments="x:Int32" Collection="[list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="402.666666666667,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="3" />
-    <AddToCollection x:TypeArguments="x:Int32" Collection="[list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="402.666666666667,22" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="20" />
-    <Assign sap:VirtualizedContainerService.HintSize="402.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <AddToCollection x:TypeArguments="x:Int32" Collection="[list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="402.4,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="3" />
+    <AddToCollection x:TypeArguments="x:Int32" Collection="[list]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="402.4,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="20" />
+    <Assign sap:VirtualizedContainerService.HintSize="402.4,60" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:Dictionary(x:Int32, x:String)">[dictionary]</OutArgument>
       </Assign.To>
@@ -115,7 +116,7 @@
         <InArgument x:TypeArguments="scg:Dictionary(x:Int32, x:String)">[new Dictionary(of int32,string)]</InArgument>
       </Assign.Value>
     </Assign>
-    <maes:AddToDictionary x:TypeArguments="x:Int32, x:String" Dictionary="[dictionary]" DisplayName="Add to dictionary" sap:VirtualizedContainerService.HintSize="402.666666666667,142" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_1" Key="1" Value="Lauren" />
+    <maes:AddToDictionary x:TypeArguments="x:Int32, x:String" Dictionary="[dictionary]" DisplayName="Add to dictionary" sap:VirtualizedContainerService.HintSize="402.4,135.2" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_1" Key="1" Value="Lauren" />
     <Assign sap:VirtualizedContainerService.HintSize="402.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[dictionary(4)]</OutArgument>
